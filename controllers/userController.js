@@ -2,7 +2,7 @@ const { ObjectId } = require('mongoose').Types;
 const { User, Thought } = require('../models');
 
 module.exports = {
-  // Get all students
+  // Get all users
   async getUsers(req, res) {
     try {
       const users = await User.find();
@@ -56,7 +56,7 @@ module.exports = {
       res.status(500).json(err);
     }
   },
-  // Delete a user and remove them from thoughts
+  // Delete a user and remove thoughts
   async deleteUser(req, res) {
     try {
       const user = await User.findOneAndRemove({ _id: req.params.userId });
@@ -127,7 +127,6 @@ module.exports = {
       res.status(500).json(err);
     }
   },
-
   // Add a friend to a user
   async addFriend(req, res) {
     console.log('You are creating a friend');
