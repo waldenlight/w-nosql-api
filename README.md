@@ -23,7 +23,7 @@ A nosql backend for a social media site using mongodb
 ## Installation
 Clone the repo locally. Follow usage steps for more.
 ## Usage
-Seed the database, run the server, and test the routes in Postman or Insomnia.
+Seed the database, run the server, and test the routes in Postman or Insomnia. Demo video [here](https://drive.google.com/file/d/1xZCg4TLqtFYVFm0mWxXTU9_F67glfwLX/view)
 ## Credits
 N/A
 ## License
