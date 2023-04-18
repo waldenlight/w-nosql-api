@@ -14,11 +14,9 @@ connection.once('open', async () => {
   const users = [];
 
   for (let i = 0; i < 20; i++) {
-    // const assignments = getRandomAssignments(20);
 
     const username = getRandomName();
     const email = `${username}@gmail.com`;
-    // const thoughts = getRandomThoughts();
 
     users.push({
       username,
@@ -31,7 +29,6 @@ connection.once('open', async () => {
   const thoughts = [];
 
   for (let i = 0; i < 20; i++) {
-    // const assignments = getRandomAssignments(20);
 
     const thoughtText = getRandomThoughts(1);
     const username = getRandomName();
